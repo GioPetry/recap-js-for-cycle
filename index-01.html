@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Recap ciclo for</title>
+    <link rel="stylesheet" href="./template/style.css">
+
+    <script type="text/javascript">
+
+        // creare un array che contiene le parole 'cane', 'gatto'
+        // in seguito aggiungere all'array una nuova parola 'topo'
+        // stampare tramite console.log il contenuto dell'array
+
+        const animali = ['cane', 'gatto'];
+
+        animali.push('topo');
+
+        console.log('contenuto array inserito tramite push', animali);
+
+        // Assegno un valore ad un indice deciso arbitrariamente. Cosa succede?
+
+        animali[5] = "pappagallo";
+
+        console.log('contenuto array inserito tramite indice', animali);
+
+        // in indice 4 l'elemento è undefined, la lunghezza però è 6 perchè ho inserito l'elemento in indice 5
+        console.log('elemento con indice 4 che valore ha?', animali[4]);
+
+        // Parlare di come ci sono anche altri metodi e che non dobbiamo ricordarli a memoria, basta cercare online ;)
+
+    </script>
+
+  </head>
+  <body>
+
+        <div class="menu bg-light p-1 text-left">
+            <h2>Recap ciclo for e array</h2>
+        </div>
+        <div class="container py-2 text-center">
+            <p>Creiamo un array che contiene le parole 'cane', 'gatto'
+                in seguito aggiungiamo all'array una nuova parola 'topo'
+                e stampiamo tramite console.log il contenuto dell'array.
+              Cosa succede se aggiungo un elemento ad un indice deciso arbitrariamente?</p>
+        </div>
+
+        <div class="logo-recap">
+            <span class="brackets">
+                [
+            </span> 
+            <span class="text">
+                Recap
+            </span>
+            <span class="brackets">
+                ]
+            </span>
+        </div>
+
+  </body>
+</html>

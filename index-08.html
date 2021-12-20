@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Recap ciclo for</title>
+    <link rel="stylesheet" href="./template/style.css">
+
+    <script type="text/javascript">
+
+        // ho un array con una lista di elementi
+        const listaBase = ['farina', 'cacao', 'uova'];
+        const listaPerRiferimento = listaBase;
+
+        listaPerRiferimento.push('elemento aggiunto su listaPerRiferimento');
+
+        // Mostrare che gli array funzionano per riferimento - quindi facendo miaLista = listaIngredienti non sto assegnando dei valori,
+        // ma sto puntando ad una parte di memoria
+        console.log("--- Passaggio per riferimento - aggiorno array destinazione ---");
+        console.log('listaBase', listaBase);
+        console.log('listaPerRiferimento', listaPerRiferimento);
+
+        console.log("\n\n");
+        // Cosa succede se invece modifico listaBase?
+        listaBase.push('elemento aggiunto su listaBase');
+        
+        console.log("--- Passaggio per riferimento - aggiorno array originale ---");
+        console.log('listaBase', listaBase);
+        console.log('listaPerRiferimento', listaPerRiferimento);
+
+        // Usando l'operatore spread
+        const listaBaseSpread = ['farina', 'cacao', 'uova'];
+        const listaClonataConSpread = [...listaBaseSpread];
+
+        listaClonataConSpread.push('elemento aggiunto su listaClonataConSpread');
+
+        console.log("\n\n");
+        console.log("--- Array clonato con spread - aggiorno array destinazione ---");
+        console.log('listaBaseSpread', listaBaseSpread);
+        console.log('listaClonataConSpread', listaClonataConSpread);
+
+        
+        listaBaseSpread.push('elemento aggiunto su listaBaseSpread');
+
+        console.log("\n\n");
+        console.log("--- Array clonato con spread - aggiorno array originale ---");
+        console.log('listaBaseSpread', listaBaseSpread);
+        console.log('listaClonataConSpread', listaClonataConSpread);
+    </script>
+
+  </head>
+  <body>
+      
+    <div class="menu bg-light p-1 text-left">
+        <h2>Recap ciclo for e array</h2>
+    </div>
+    <div class="container py-2 text-center">
+        <p>Clonare un array con l'operatore spread ...</p>
+    </div>
+
+    <div class="logo-recap">
+        <span class="brackets">
+            [
+        </span> 
+        <span class="text">
+            Recap
+        </span>
+        <span class="brackets">
+            ]
+        </span>
+    </div>
+
+  </body>
+</html>
